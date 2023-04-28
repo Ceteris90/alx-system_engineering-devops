@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # This script displays numbers from 1 to 20 and displays different messages for the 4th, 9th, and 17th loop iterations.
 
 count=1
