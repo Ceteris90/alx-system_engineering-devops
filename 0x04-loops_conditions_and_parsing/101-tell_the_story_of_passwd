@@ -1,0 +1,14 @@
+#!/bin/bash
+# Bash script that displays the content of the file /etc/passwd, using the while loop + IFS.
+
+# set IFS to colon to split the fields in /etc/passwd
+IFS=':'
+
+# read /etc/passwd line by line
+while read -r username password userid groupid userdesc homedir shell; do
+    # extract the full name of the user
+    fullname=$(echo "$userdesc" | cut -d"," -f1)
+    # print the story for the user
+    echo "The user $fullname is part of the $groupid gang, lives in $homedir and rides $shell. USER ID's place is protected by the passcode $password, more info about the user here: USER ID INFO"
+done < /etc/passwd
+
