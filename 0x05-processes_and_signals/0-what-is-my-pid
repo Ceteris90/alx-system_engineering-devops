@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
+# Bash script that returns the PID 
+
 echo "$$"
 
