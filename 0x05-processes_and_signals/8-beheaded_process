@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script kills the process 7-highlander
+
+kill -9 "$(ps aux | grep 7-highlander)"
