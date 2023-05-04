@@ -2,4 +2,4 @@
 #script to express regular expression
 
 input_string = ARGV[0]
-puts input_string.span(/[A-Z]/).join
+puts input_string.span(/^[A-Z]+$/).join
