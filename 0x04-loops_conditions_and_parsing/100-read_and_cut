@@ -7,4 +7,3 @@ while IFS=: read -r user passwd uid gid gecos home shell;
 do
   echo "$user:$uid:$home"
 done < "$filename"
-
